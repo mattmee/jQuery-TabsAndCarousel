@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script>
+	//javascript goes in the /Scripts/main.js file
+</script>
+
+<div class="container">
+    <div class="tabs">
+        <h1>Tabs</h1>
+
+        <button type="button" class="btn btn-default active" data-tabid="1">Tab Instructions</button>
+
+        <button type="button" class="btn btn-default" data-tabid="2">Bacon Ipsum</button>
+
+        <button type="button" class="btn btn-default" data-tabid="3">Cat Ipsum</button>
+
+        <button type="button" class="btn btn-default" data-tabid="4">Carousel Instructions</button>
+
+        <div id="tab1" class="panel">
+            <h3>Tab Instructions</h3>
+            <p>The purpose of the tabs is to show specific content by pressing a button.  To do this you'll need to:</p>
+            <ul>
+                <li>Hide all the images but one using the "hide" class</li>
+                <li>Bind a click event tab buttons</li>
+                <li>
+                    In the function for the click next event:
+                    <ul>
+                        <li>Hide all of the tab content  -- divs with the ids of tab1, tab2, etc</li>
+                        <li>Using the data-tabid value found on the thing you clicked on, remove the "hide" class from the associated tab.  See the <a href="http://api.jquery.com/data/" target="_blank">.data() documentation</a> on how to use the data-tabid value.</li>
+                        <li>Remove the active class from all of the tab buttons</li>
+                        <li>Add the active class to the button that you clicked on</li>
+                    </ul>
+                </li>
+                <li>Learn more about jQuery's abilities <a href="http://api.jquery.com/" target="_blank">here</a>!
+            </ul>
+        </div>
+
+        <div id="tab2" class="panel">
+            <h3>Bacon Ipsum</h3>
+            <p>Bacon ipsum dolor amet drumstick doner consectetur pork ea, voluptate turkey strip steak hamburger velit adipisicing tempor aute ham hock. Culpa venison cow sed, corned beef sausage shankle non velit labore ham. Velit ipsum eu swine in alcatra consequat pork chop laboris strip steak sirloin sed salami cillum. Officia ex sausage pancetta porchetta pork loin ribeye corned beef adipisicing boudin frankfurter eiusmod. Ea id bacon eiusmod tenderloin tempor mollit t-bone nulla in ipsum consequat sint nostrud. Beef flank porchetta fugiat, pastrami bresaola sint bacon occaecat consectetur dolore et duis. Pastrami meatloaf in ea, pork rump chicken ball tip tenderloin fugiat meatball.</p>
+        </div>
+
+        <div id="tab3" class="panel">
+            <h3>Cat Ipsum</h3>
+            <p>Destroy couch hack up furballs and lick arm hair but love to play with owner's hair tie meow all night having their mate disturbing sleeping humans. Missing until dinner time. Chase laser make muffins, but rub face on everything hopped up on catnip. Sleep nap use lap as chair, for need to chase tail swat at dog, and hate dog, and sit by the fire. Intently sniff hand. Has closed eyes but still sees you purr while eating. Attack feet climb leg under the bed, and use lap as chair. Nap all day claw drapes spread kitty litter all over house and purr while eating so eat grass, throw it back up. Loves cheeseburgers roll on the floor purring your whiskers off or chase ball of string throwup on your pillow present belly, scratch hand when stroked and purr while eating. Ears back wide eyed. Sun bathe find something else more interesting present belly, scratch hand when stroked inspect anything brought into the house present belly, scratch hand when stroked but leave fur on owners clothes climb leg. Why must they do that. </p>
+        </div>
+        <div id="tab4" class="panel">
+            <h3>Carousel Instructions</h3>
+            <p>The purpose of the carousel is to rotate images by pressing a button.  To do this you'll need to:</p>
+            <ul>
+                <li>Hide all the images but one using the "hide" class</li>
+                <li>Bind a click event to the next/previous buttons</li>
+                <li>
+                    In the function for the click next event:
+                    <ul>
+                        <li>Place the active image into a variable called activeImage</li>
+                        <li>Place the next image into a varaible called nextImage</li>
+                        <li>Check to make sure that the nextImage is a valid Image (has the class of carousel)</li>
+                        <li>If the image is not a valid image, set the nextImage to be the first image</li>
+                        <li>Now that you have your two images, apply and remove the "show" and "hide" classes appropriately.</li>
+                    </ul>
+                </li>
+                <li> The previous button works almost the same.  Use that brain of yours to figure out how to make it work!</li>
+                <li>Learn more about jQuery's abilities <a href="http://api.jquery.com/">here</a>!
+            </ul>
+
+
+        </div>
+    </div>
+    <div class="carousel">
+        <h1>Image Carousel</h1>
+        <img src="http://managementscience.biz/wp-content/uploads/2014/09/jquery-icon.png" />
+        <img src="http://i.stack.imgur.com/Mmww2.png"/>
+        <img src="http://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" />
+        <img src="http://4.bp.blogspot.com/-_jtoi-CBS3E/UDg91M4DgLI/AAAAAAAAC1Q/prAGfj6OSG4/s1600/css3-search-box.png" />
+        <p>
+            <button type="button" class="btn btn-default" id="prevBtn">Previous</button>
+            <button type="button" class="btn btn-default" id="nextBtn">Next</button>
+        </p>
+    </div>
+</div>
